@@ -1,0 +1,2 @@
+# C-
+Analiza pliku tekstowego
