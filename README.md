@@ -1,2 +1,2 @@
 # C-
-Analiza pliku tekstowego
+Analiza pliku tekstowego oraz prosta animacja CSS
