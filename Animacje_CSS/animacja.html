@@ -1,0 +1,253 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	body{
+		background-image: url("1.jpg");
+		}
+
+	#statek1 {
+	  height:100px;
+	  position: fixed;
+	  top:600px;
+	  left:600px;
+	  animation: statek 4s linear;
+	  -webkit-animation: statek 4s;
+	  transition-duration: 1s, 1s; 
+	  transition-timing-function: linear;
+	  animation-delay: 0.5s;
+		animation-fill-mode: forwards;	  
+	}
+	
+	#statek2 {
+	  height:100px;
+	  position: fixed;
+	  top:600px;
+	  left:900px;
+	  animation: statek2 2s;
+	  -webkit-animation: statek2 2s;
+	  transition-duration: 1s, 1s; 
+	  transition-timing-function: linear;
+	  animation-delay: 4.4s; 
+	  opacity: 0;
+	}
+	
+	#baza {
+	  height:200px;
+	  width: 200px;
+	  position:absolute;
+	  top:100px;
+	  left:500px;
+	  animation: znikanie 3s linear;
+	 -webkit-animation: znikanie 3s;
+	 transition-duration: 1s, 1s; 
+	 transition-timing-function: linear;
+	 animation-delay: 3s;
+	 opacity: 1;
+	 animation-fill-mode: forwards;
+	}
+	
+	#laser1 {
+	height: 25px;
+	width: 3px;
+	background-color:red;
+	position:fixed;
+	top: 550px;
+	left: 650px;
+	animation: laser 1s linear;
+	-webkit-animation: laser 1s;
+	transition-duration: 1s, 1s; 
+	transition-timing-function: linear;
+	opacity: 0;
+	}
+	
+	#laser2 {
+	height: 25px;
+	width: 3px;
+	background-color:red;
+	position:fixed;
+	top: 550px;
+	left: 650px;
+	animation: laser 1s linear;
+	-webkit-animation: laser 1s;
+	transition-duration: 1s, 1s; 
+	transition-timing-function: linear;
+	animation-delay: 0.5s; 
+	opacity: 0;
+	}
+	
+	#laser3 {
+	height: 25px;
+	width: 3px;
+	background-color:red;
+	position:fixed;
+	top: 550px;
+	left: 700px;
+	animation: laser 1s linear;
+	-webkit-animation: laser 1s;
+	transition-duration: 1s, 1s; 
+	transition-timing-function: linear;
+	animation-delay: 1.2s; 
+	opacity: 0;
+	}
+	
+	#rakieta {
+	position:fixed;
+	top: 350px;
+	left: 630px;
+
+	animation: rakieta 3s;
+	-webkit-animation: rakieta 3s;
+	transition-duration: 3s, 3s; 
+	transition-timing-function: linear;
+	animation-delay: 0.3s; 
+	opacity: 0;
+	}
+	
+	#bum1{
+		position:fixed;
+		top: 320px;
+		left: 630px;
+		opacity: 0;
+		animation: bum 1s;
+		-webkit-animation: bum 1s;
+		transition-duration: 1s, 1s;
+		transition-timing-function: linear;
+		animation-delay: 0.4s;
+	}
+	
+	#bum2{
+		position:fixed;
+		top: 300px;
+		left: 630px;
+		opacity: 0;
+		animation: bum 1s;
+		-webkit-animation: bum 1s;
+		transition-duration: 1s, 1s;
+		transition-timing-function: linear;
+		animation-delay: 1.3s;
+	}
+	
+	#bum3{
+		position:fixed;
+		top: 320px;
+		left: 680px;
+		opacity: 0;
+		animation: bum 1s;
+		-webkit-animation: bum 1s;
+		transition-duration: 1s, 1s;
+		transition-timing-function: linear;
+		animation-delay: 2s;
+	}
+	
+	#bum4{
+		position:fixed;
+		top: 140px;
+		left: 520px;
+		opacity: 0;
+		animation: bumB 1s;
+		-webkit-animation: bumB 1s;
+		transition-duration: 1s, 1s;
+		transition-timing-function: linear;
+		animation-delay: 2.4s;
+	}
+	
+	#bum5{
+		position:fixed;
+		top: 70px;
+		left: 500px;
+		opacity: 0;
+		animation: bumB 1s;
+		-webkit-animation: bumB 1s;
+		transition-duration: 1s, 1s;
+		transition-timing-function: linear;
+		animation-delay: 3s;
+	}
+	@keyframes laser {
+	0% {top: 550px; opacity: 1;}
+	100% {top: 330px;  opacity: 1;}
+	}
+	
+	@-webkit-keyframes laser {
+	0% {top: 550px; opacity: 1;}
+	100% {top: 330px;  opacity: 1;}
+	}
+	
+	@keyframes statek {
+	0% {top: 600px; left: 600px; opacity: 1;}
+	99% {top: 600px; left: 900px; opacity: 1;}
+	100%{top: 600px; left: 900px; opacity: 0;}
+	}
+	
+	@-webkit-keyframes statek {
+	0% {top: 600px; left: 600px; opacity: 1;}
+	100% {top: 600px; left: 900px; opacity: 1;}
+	}
+	
+	@keyframes statek2 {
+	0% {top: 600px; left: 900px; opacity: 1;}
+	100% {top: -100px; left: 900px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes statek2 {
+	0% {top: 600px; left: 900px; opacity: 1;}
+	100% {top: -100px; left: 900px; opacity: 1;}
+	}
+	
+	
+	@keyframes rakieta {
+	0% {top: 350px; opacity: 1;}
+	100% {top: 800px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes rakieta {
+	0% {top: 350px; opacity: 1;}
+	100% {top: 800px; opacity: 1;}
+	}
+	
+	@keyframes bum {
+	0% {width: 0px; heigh: 0px; opacity: 1;}
+	100% {width: 50px; heigh: 50px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes bum {
+	0% {width: 0px; heigh: 0px; opacity: 1;}
+	100% {width: 50px; heigh: 50px; opacity: 1;}
+	}
+	
+	@keyframes bumB {
+	0% {width: 0px; heigh: 0px; opacity: 1;}
+	100% {width: 300px; heigh: 3000px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes bumB {
+	0% {width: 0px; heigh: 0px; opacity: 1;}
+	100% {width: 300px; heigh: 300px; opacity: 1;}
+	}
+	
+	@keyframes znikanie {
+	0% {width: 200px; heigh: 200px; opacity: 1;}
+	100% {width: 0px; heigh: 0px; opacity: 0;}
+	}
+	
+	@-webkit-keyframes znikanie {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+</style>
+</head>
+<body >
+<div id="statek1"><img src="statek1.png" alt="Statek" style="width:100px;height:100px;"></div>
+<div id="statek2"><img src="statek1.png" alt="Statek" style="width:100px;height:100px;"></div>
+<div id="baza"><img src="baza1.png" alt="Baza" style="width:300px;height:300px;"></div>
+<div id="laser1"></div>
+<div id="laser2"></div>
+<div id="laser3"></div>
+<div id="rakieta"><img src="rakieta.png" alt="Rakieta" style="width:30px;height:50px;"></div>
+<div id="bum1"><img src="bum.gif" alt="Wybuch" style="width:50px;height:50px;"></div>
+<div id="bum2"><img src="bum.gif" alt="Wybuch" style="width:50px;height:50px;"></div>
+<div id="bum3"><img src="bum.gif" alt="Wybuch" style="width:50px;height:50px;"></div>
+<div id="bum4"><img src="bum.gif" alt="Wybuch" style="width:300px;height:300px;"></div>
+<div id="bum5"><img src="bum.gif" alt="Wybuch" style="width:300px;height:300px;"></div>
+</body>
+</html>
